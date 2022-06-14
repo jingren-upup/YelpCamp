@@ -9,3 +9,4 @@ city named stored in BSON
 ejs mate for layout
 
 bootstrap for icons and official themes navbar
+joi as js validator tool 
