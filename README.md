@@ -9,4 +9,11 @@ city named stored in BSON
 ejs mate for layout
 
 bootstrap for icons and official themes navbar
-joi as js validator tool 
+joi as js validator tool
+
+configure session cookie 
+set up flash
+
+use passport to authenication  
+
+MongoDB Atlas to deploy the online  database service 
