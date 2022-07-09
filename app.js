@@ -61,22 +61,18 @@ passport.deserializeUser(User.deserializeUser());
 
  
 app.use((req,res,next) => {
+    res.locals.currentUser = req.user;
+    if(!['/login', '/'].includes(req.originalUrl)) {
+        req.session.returnTo = req.originalUrl;
+    }
+    
+    if(req.session.passport){
+        res.locals.userName =req.session.passport.user 
+    }
     res.locals.success = req.flash('success');
     res.locals.error = req.flash('error');
     next();
 })
-
-
-
-// const validateReview = (req, res, next) => {
-//     const { error } = reviewSchema.validate(req.body);
-//     if (error) {
-//         const msg = error.details.map(el => el.message).join(',')
-//         throw new ExpressError(msg, 400)
-//     } else {
-//         next();
-//     }
-// }
 
 app.use('/', userRoutes);
 app.use('/campgrounds', campgroundRoutes)
