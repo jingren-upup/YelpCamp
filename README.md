@@ -23,3 +23,5 @@ use cloudinary to upload image
 multer to handle multple data
 
 cloudinary multer-storage-cloudinary || dotnev || multer || passport passport-local passport-local-mongoose 
+
+use mapbox to show the map and geo location
