@@ -16,4 +16,8 @@ set up flash
 
 use passport to authenication  
 
-MongoDB Atlas to deploy the online  database service 
+MongoDB Atlas to deploy the online  database service
+
+use cloudinary to upload image 
+
+multer to handle multple data
