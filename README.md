@@ -21,3 +21,5 @@ MongoDB Atlas to deploy the online  database service
 use cloudinary to upload image 
 
 multer to handle multple data
+
+cloudinary multer-storage-cloudinary || dotnev || multer || passport passport-local passport-local-mongoose 
